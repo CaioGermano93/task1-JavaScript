@@ -140,7 +140,84 @@
 // }
 
 // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+// ESTRUTURAS DE REPETIÇÃO:
 
+// 1.	Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+
+// while (true) {
+//   let nota = parseFloat(prompt("Digite a sua nota, por favor"));
+//   if (nota >= 0 && nota <= 10) {
+//     console.log(nota);
+//   break;
+// } else {
+//      alert("Sua nota digitada está invalida por favor digite uma nota entre 0 e 10");
+//     }
+//   }
+
+// 2.	MOSTRAR DIFERENÇA ENTRE VAR E LET
+
+// VAR - Declara variáveis com um escopo 'GLOBAL'.
+// LET - Declara variáveis com um escopo de 'BLOCO', 'INSTRUÇÃO' ou 'EXPRESSÃO'.
+// Obs.: O termo "escopo" se refere ao "local" onde a variável existe, sendo assim, a grande diferença entre eles é porque o VAR é mais "abrangente" por declarar de forma global, enquanto que o LET é mais "restrito".
+
+// 3.	Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+
+// do {
+//   var name = prompt("Escreva o seu nome");
+//   var password = prompt("Escreva a sua senha");
+//     if (name == password) {
+//     alert("Por favor, digite uma senha que seja diferente do nome");
+//       }
+//     } while (name == password);
+
+// 4.	Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. 
+
+// for(let i = 1; i <= 20; i++) {
+// console.log(i);
+//   }
+
+// 5.	Faça um programa que leia 5 números e informe o maior número.
+
+// let maior = 0;
+// for (let i = 0; i < 5; i++) {
+//   let n = parseInt(prompt("Por favor, digite um número"));
+//   if (n > maior) {
+//     maior = n;
+//   }
+// }
+//   console.log(maior);
+
+// 6.	Faça um programa que leia 5 números e informe a s e a média dos números.
+
+// var s = 0;
+// let media = 0;
+//   for (let i = 0; i < 5; i++) {
+//   let n = parseInt(prompt("Por favor, digite apenas um númerio"));
+//   s += n;
+//   }
+//   media = s/5;
+//    console.log("O calculo da var s é: " + s);
+//    console.log("O cálculo da média é: " + media);
+
+// 7.	Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+
+// for(let i = 1; i <= 50; i++) {
+// if (i%2 != 0) {
+//     console.log(i);
+//   }
+// }
+  
+// 8.	Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual n ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+// a.	Tabuada de 5:
+// b.	5 X 1 = 5
+// c.	5 X 2 = 10
+// d.	...
+// e.	5 X 10 = 50
+
+// let nTab = parseInt(prompt("Digite um número para ver sua tabuada")) 
+// for(let i = 1; i <= 10; i++) {
+//   console.log(nTab + " x " + i + " = " + (nTab * i));
+// }
 
      
      
